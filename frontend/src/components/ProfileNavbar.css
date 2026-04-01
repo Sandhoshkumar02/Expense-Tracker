@@ -1,0 +1,45 @@
+.nav {
+  background: linear-gradient(135deg, #2b6777, #52ab98);;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* cleaner layout */
+  padding-right: 40px;
+}
+
+/* Right container */
+.login-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Back button */
+.back-btn {
+  font-size: 15px;
+  transition: 0.3s ease;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  color: #2b6777;
+}
+
+/* Save button */
+.save-btn {
+  background: white;
+  color: #52ab98;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #2b6777;
+  color: white;
+}

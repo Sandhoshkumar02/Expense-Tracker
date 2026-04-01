@@ -1,0 +1,36 @@
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: white;
+}
+
+.feature-card {
+  width: 250px;
+  text-align: center;
+  /* border: 2px solid #555; */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+
+}
+
+.icon {
+  font-size: 40px;
+  color: #52ab98;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #666;
+}
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}

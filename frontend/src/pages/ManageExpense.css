@@ -1,0 +1,229 @@
+/* ================= CONTAINER ================= */
+.manage-container {
+  padding: 130px 60px;
+}
+
+/* Heading */
+.manage-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2b6777;
+  font-size: 28px;
+}
+
+/* ================= TABLE ================= */
+.manage-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.manage-table th {
+  background: #52ab98;
+  color: white;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.manage-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  max-width: 150px;
+  word-break: break-word;
+}
+
+/* Row hover */
+.manage-table tr:hover {
+  background: #f9f9f9;
+}
+
+/* ================= BUTTONS ================= */
+.manage-table td:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.manage-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Edit button */
+.manage-table button:first-child {
+  background: #52ab98;
+  color: white;
+}
+
+.manage-table button:first-child:hover {
+  background: #2b6777;
+}
+
+/* Delete button */
+.manage-table button:last-child {
+  background: #e74c3c;
+  color: white;
+}
+
+.manage-table button:last-child:hover {
+  background: #c0392b;
+}
+
+/* ================= ADD BUTTON ================= */
+.add-btn {
+  display: block;
+  margin: 25px auto 0;
+  padding: 12px 20px;
+  background: #52ab98;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #2b6777;
+}
+
+/* ================= MODAL ================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 35px;          
+  border-radius: 12px;
+  width: 550px;          
+  max-width: 90%;         
+  position: relative;
+  animation: fadeIn 0.25s ease;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ================= FORM ================= */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2b6777;
+}
+
+/* Form layout */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs + textarea */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+/* Focus effect */
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #52ab98;
+  box-shadow: 0 0 5px rgba(82, 171, 152, 0.5);
+}
+
+/* Button inside form */
+.form-container button {
+  padding: 10px;
+  background: #52ab98;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background: #2b6777;
+}
+
+.form-container button:active {
+  transform: scale(0.98);
+}
+
+/* ================= DELETE CONFIRM ================= */
+.confirm-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.cancel-btn {
+  background: gray;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

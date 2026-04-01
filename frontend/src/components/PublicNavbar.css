@@ -1,0 +1,61 @@
+.public-navbar {
+  background:linear-gradient(135deg, #2b6777, #52ab98);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.public-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Right side buttons */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Login button */
+.login-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  color: #2b6777;
+}
+
+/* Signup button */
+.signup-btn {
+  background: white;
+  color: #52ab98;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #2b6777;
+  color: white;
+}

@@ -1,0 +1,172 @@
+/* ===== PAGE ===== */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+  padding-top: 90px;
+}
+
+/* ===== CARD ===== */
+.profile-card {
+  background: #fff;
+  width: 420px;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.profile-card h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #2b6777;
+}
+
+/* Success Message */
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* ===== IMAGE ===== */
+.image-section img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #52ab98;
+  margin-bottom: 12px;
+}
+
+/* ===== PROFILE ROW ===== */
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-row label {
+  font-weight: 600;
+  color: #555;
+}
+
+.profile-row input {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ===== BUTTONS ===== */
+.profile-actions {
+  margin-top: 20px;
+}
+
+.profile-actions button,
+.password-section button {
+  background: #52ab98;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.profile-actions button:hover,
+.password-section button:hover {
+  background: #2b6777;
+}
+
+.disabled-btn {
+  background: #ccc !important;
+  cursor: not-allowed;
+}
+
+/* ===== PASSWORD SECTION ===== */
+.password-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  text-align: left;
+}
+
+.password-section h3 {
+  margin-bottom: 10px;
+  color: #2b6777;
+}
+
+.password-section input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  align-content: start;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.header-left img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #52ab98;
+}
+
+.header-left input {
+  margin-top: 10px;
+}
+
+
+.header-right h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #2b6777;
+}
+
+.header-right p {
+  margin: 5px 0 0 0;
+  color: #777;
+}
+
+.profile-details {
+  margin-top: 15px;
+}
+
+/* File Upload Wrapper */
+.file-upload {
+  margin-top: 10px;
+}
+
+/* Custom Upload Button */
+.upload-btn {
+  display: inline-block;
+  background: #52ab98;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #2b6777;
+}

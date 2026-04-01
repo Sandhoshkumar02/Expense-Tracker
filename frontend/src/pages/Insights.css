@@ -1,0 +1,111 @@
+/* Page */
+.insights-page {
+  background: white;
+  min-height: 100vh;
+  padding: 40px;
+  padding-top: 100px;
+  color: white;
+}
+
+/* Title */
+.insights-page h2 {
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Grid */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.insight-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.insight-card:hover {
+  transform: translateY(-5px);
+}
+
+.insight-card h4 {
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+
+}
+
+.insight-card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+
+}
+
+/* Icon Style */
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Colors */
+.icon.income {
+  color: #4CAF50;
+}
+
+.icon.category {
+  color: #FFC107;
+}
+
+.icon.trend {
+  color: #00BCD4;
+}
+
+.icon.savings {
+  color: #E91E63;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+    width: 0; /* start from 0 */
+  transition: width 3s ease-in-out; /* 🔥 animation */
+}
+
+/* Colors */
+.progress.expense {
+  background: #ff4d4d;
+}
+
+.progress.savings {
+  background: #4CAF50;
+}
+
+/* AI Insight Box */
+.ai-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}   
