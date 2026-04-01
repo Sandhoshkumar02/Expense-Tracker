@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: expense-tracker-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:postgresql://dpg-d76g9vtm5p6s73bm4l90-a.ohio-postgres.render.com/expense_db_l2c1
+      - key: SPRING_DATASOURCE_USERNAME
+        value: expense_db_l2c1_user
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: 60xKTNaez0xUztlXGXXXrmOeKxYs5SqW
+      - key: JWT_SECRET
+        value: mySuperSecretKey12345678901234567890
