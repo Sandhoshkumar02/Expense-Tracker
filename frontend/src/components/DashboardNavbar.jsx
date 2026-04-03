@@ -25,7 +25,7 @@ export default function DashboardNavbar() {
 
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/auth/profile",
+        "https://expense-tracker-ldlx.onrender.com/api/auth/profile",
         {
           headers: { Authorization: `Bearer ${token}` }
         }

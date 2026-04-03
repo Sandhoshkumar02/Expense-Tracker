@@ -15,7 +15,7 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();   
     try {
-      await axios.post("http://localhost:8080/api/auth/signup", {
+      await axios.post("https://expense-tracker-ldlx.onrender.com/api/auth/signup", {
         name,
         email,
         password
