@@ -25,7 +25,7 @@ export default function Profile() {
 
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/auth/profile",
+        "https://expense-tracker-ldlx.onrender.com/api/auth/profile",
         {
           headers: { Authorization: `Bearer ${storedToken}` }
         }
@@ -60,7 +60,7 @@ export default function Profile() {
       // Update name
       if (editedName !== user.name) {
         await axios.put(
-          "http://localhost:8080/api/auth/profile",
+          "https://expense-tracker-ldlx.onrender.com/api/auth/profile",
           { name: editedName },
           {
             headers: { Authorization: `Bearer ${storedToken}` }
@@ -74,7 +74,7 @@ export default function Profile() {
         formData.append("file", file);
 
         await axios.post(
-          "http://localhost:8080/api/auth/profile/upload",
+          "https://expense-tracker-ldlx.onrender.com/api/auth/profile/upload",
           formData,
           {
             headers: { Authorization: `Bearer ${storedToken}` },
@@ -109,7 +109,7 @@ export default function Profile() {
 
     try {
       await axios.put(
-        "http://localhost:8080/api/auth/change-password",
+        "https://expense-tracker-ldlx.onrender.com/api/auth/change-password",
         { currentPassword, newPassword },
         {
           headers: { Authorization: `Bearer ${storedToken}` }
@@ -142,7 +142,7 @@ export default function Profile() {
               previewImage
                 ? previewImage
                 : user.profileImage
-                  ? `http://localhost:8080/uploads/${user.profileImage}?t=${Date.now()}`
+                  ? `https://expense-tracker-ldlx.onrender.com/uploads/${user.profileImage}?t=${Date.now()}`
                   : "https://via.placeholder.com/120"
             }
             alt="Profile" className="image-section"

@@ -74,7 +74,7 @@ export default function DashboardNavbar() {
             <img
               src={
                 profileImage
-                  ? `http://localhost:8080/uploads/${profileImage}`
+                  ? `https://expense-tracker-ldlx.onrender.com/uploads/${profileImage}`
                   : "https://via.placeholder.com/35"
               }
               alt="Profile"
