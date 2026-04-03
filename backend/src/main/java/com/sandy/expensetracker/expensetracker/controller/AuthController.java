@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://smart-expense-tracker-sandy.netlify.app")
 public class AuthController {
 
     private final UserService userService;
