@@ -23,25 +23,49 @@ A full-stack web application to manage and track daily expenses and income secur
 ### 🔐 Signup Page
 
 ```md
-![Signup](./screenshots/signup.png)
+![Signup](screenshots/signup.png)
 ```
 
 ### 🔑 Login Page
 
 ```md
-![Login](./screenshots/login.png)
+![Login](screenshots/login.png)
 ```
 
 ### 📊 Dashboard
 
 ```md
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 ```
 
 ### 💵 Add Expense
 
 ```md
-![Add Expense](./screenshots/add-expense.png)
+![Add Expense](screenshots/Add Expense.png)
+```
+
+### 💰 Add Budget
+
+```md
+![Add Budget](screenshots/Add Budget.png)
+```
+
+### 📈 Report
+
+```md
+![Report](screenshots/report.png)
+```
+
+###  🔍 Insight
+
+```md
+![Insight](screenshots/insight.png)
+```
+
+### 👤 Profile
+
+```md
+![Profile](screenshots/profile.png)
 ```
 
 ---
