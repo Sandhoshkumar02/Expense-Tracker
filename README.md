@@ -23,6 +23,8 @@ A full-stack web application to manage and track daily expenses and income secur
 ### 🔐 Signup Page
 
 ```md
+![Uploading signup.png…]()
+
 ![Signup](screenshots/signup.png)
 ```
 
